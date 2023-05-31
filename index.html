@@ -1,76 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/images/favicon-32x32.png" />
-    <link rel="stylesheet" href="assets/dist/main.css" />
-    <title>Frontend Mentor | Results summary component</title>
-  </head>
-  <body>
-    <main class="main">
-      <section class="main__card card">
-        <h1 class="card__title card__title--hidden">Results of the Test</h1>
-        <article class="card__wrapper card__wrapper--result">
-          <h2 class="card__title card__title--resultHeading">Your Result</h2>
-          <div class="card__circle">
-            <div class="card__score">
-              <span class="card__scoredReached">76</span>
-              <span class="card__maxScore">of 100</span>
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Results summary component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <link rel="stylesheet" href="mobile.css" type="text/css">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <div class="content">
+      <div class="left">
+        <div class="heading">
+          <h1>Your Result</h1>
+        </div>
+        <div class="circle-div">
+          <div class="circle">
+            <h2>76</h2>
+            <p>of 100</p>
+          </div>
+        </div>
+        <div class="greating-dev">
+          <div class="greating">
+            <h3>Great</h3>
+            <p>You scored higher than 65% of the people who have taken these tests.</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="right">
+        <div class="right-cont">
+          <div class="heading">
+            <h4>Summary</h4>
+          </div>
+          <div class="mark-sec">
+            <div class="marks">
+              <div class="status reaction">
+                <div class="img">
+                  <img src="images/icon-reaction.svg" alt="reaction">
+                </div>
+                <div class="name">
+                  <p>Reaction</p>
+                </div>
+                <div class="mark">
+                  <p class="score">80</p>
+                  <p>/ 100</p>
+                </div>
+              </div>
+            </div>
+  
+            <div class="marks">
+              <div class="status memory">
+                <div class="img">
+                  <img src="images/icon-memory.svg" alt="memory">
+                </div>
+                <div class="name">
+                  <p>Memory</p>
+                </div>
+                <div class="mark">
+                  <p class="score">92</p>
+                  <p>/ 100</p>
+                </div>
+              </div>
+            </div>
+  
+            <div class="marks">
+              <div class="status verbal">
+                <div class="img">
+                  <img src="images/icon-verbal.svg" alt="verbal">
+                </div>
+                <div class="name">
+                  <p>Verbal</p>
+                </div>
+                <div class="mark">
+                  <p class="score">61</p>
+                  <p>/ 100</p>
+                </div>
+              </div>
+            </div>
+  
+            <div class="marks">
+              <div class="status visual">
+                <div class="img">
+                  <img src="images/icon-visual.svg" alt="visual">
+                </div>
+                <div class="name">
+                  <p>Visual</p> 
+                </div>
+                <div class="mark">
+                  <p class="score">72</p>
+                  <p>/ 100</p>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="card__content">
-            <h3 class="card__subtitle">Great</h3>
-            <p class="card__descriptionResult">
-              You scored higher than 65% of the people who have taken these
-              tests.
-            </p>
+          <div class="buttons">
+            <button onclick="window.open('#')">Continue</button>
           </div>
-        </article>
-        <article class="card__wrapper card__wrapper--summary">
-          <h2 class="card__title card__title--resultSummary">Summary</h2>
-          <ul class="card__scoredList">
-            <li class="card__categorie card__categorie--reaction">
-              <div class="card__categorieContent">
-                <span class="card__categorieName card__categorieName--reaction"
-                  >Reaction</span
-                >
-                <span class="card__categoriePoints">80</span>
-              </div>
-            </li>
-            <li class="card__categorie card__categorie--memory">
-              <div class="card__categorieContent">
-                <span class="card__categorieName card__categorieName--memory"
-                  >Memory</span
-                >
-                <span class="card__categoriePoints">92</span>
-              </div>
-            </li>
-            <li class="card__categorie card__categorie--verbal">
-              <div class="card__categorieContent">
-                <span class="card__categorieName card__categorieName--verbal"
-                  >Verbal</span
-                >
-                <span class="card__categoriePoints">61</span>
-              </div>
-            </li>
-            <li class="card__categorie card__categorie--visual">
-              <div class="card__categorieContent">
-                <span class="card__categorieName card__categorieName--visual"
-                  >Visual</span
-                >
-                <span class="card__categoriePoints">72</span>
-              </div>
-            </li>
-          </ul>
-          <button class="card__btn">Continue</button>
-        </article>
-      </section>
-    </main>
-  </body>
+          </div>
+          
+        
+        </div>
+      </div>
+    </div>
+  </div>  
+<footer>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Mohammad Hemal</a>.
+  </div>
+</footer>
+
+  <!-- Your Result
+  76
+  of 100
+
+  Great
+  You scored higher than 65% of the people who have taken these tests.
+  
+  Summary
+
+  Reaction
+  80 / 100
+
+  Memory
+  92 / 100
+
+  Verbal
+  61 / 100
+
+  Visual
+  72 / 100
+
+  Continue -->
+  
+</body>
 </html>
